@@ -1,0 +1,17 @@
+body { font-family: Arial, sans-serif; margin: 0; background: #f5f7fa; color: #1b1f23; }
+.container { max-width: 960px; margin: 0 auto; padding: 1rem; }
+header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
+header h1 { margin: 0; color: #2f6bed; }
+nav a { margin-right: 12px; text-decoration: none; color: #2f6bed; font-weight: bold; }
+nav a:hover { text-decoration: underline; }
+.card, .profile-panel, .dare-panel, .auth { background: #fff; border: 1px solid #e1e4e8; border-radius: 8px; padding: 1rem; margin-bottom: 1rem; }
+.card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); grid-gap: 1rem; }
+.card h3 { margin-top: 0; }
+button { cursor: pointer; background: #2f6bed; color: #fff; border: 0; border-radius: 4px; padding: 0.5rem 1rem; }
+button:hover { background: #1d4ed8; }
+form label { display: block; margin-bottom: 0.75rem; }
+form input, form textarea { width: 100%; padding: 0.5rem; margin-top: 0.25rem; border: 1px solid #d0d7de; border-radius: 4px; }
+.inline-form label { display: inline-block; margin-right: 1rem; }
+.auth { max-width: 400px; margin: 2rem auto; }
+table { width: 100%; border-collapse: collapse; margin-top: 0.5rem; }
+table th, table td { border: 1px solid #e1e4e8; padding: 0.5rem; text-align: left; }

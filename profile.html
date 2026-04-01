@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile - DarePay</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>DarePay Profile</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="login.html" id="logout-link">Logout</a>
+      </nav>
+    </header>
+
+    <section class="profile-panel">
+      <h2>Your Wallet</h2>
+      <p id="user-info">Loading...</p>
+      <form id="update-profile-form" class="inline-form">
+        <label>Username <input name="username" required /></label>
+        <label>Bitcoin address <input name="btc_address" /></label>
+        <button type="submit">Update Profile</button>
+      </form>
+      <form id="deposit-form" class="inline-form">
+        <label>Deposit BTC <input name="amount_btc" type="number" step="0.00000001" required /></label>
+        <button type="submit">Deposit</button>
+      </form>
+      <form id="transfer-form" class="inline-form">
+        <label>Send BTC to (username) <input name="to_username" required /></label>
+        <label>Amount <input name="amount_btc" type="number" step="0.00000001" required /></label>
+        <button type="submit">Send</button>
+      </form>
+      <div id="wallet-msg"></div>
+    </section>
+
+    <section class="dare-panel">
+      <h2>Create a Dare</h2>
+      <form id="dare-form" class="stacked-form">
+        <label>Title <input name="title" required /></label>
+        <label>Description <textarea name="description" required></textarea></label>
+        <label>Reward BTC <input name="reward_btc" type="number" step="0.00000001" required /></label>
+        <button type="submit">Post Dare</button>
+      </form>
+      <div id="dare-msg"></div>
+    </section>
+
+    <section>
+      <h2>Live Dares</h2>
+      <div id="dare-table"></div>
+    </section>
+
+    <section>
+      <h2>Transactions</h2>
+      <div id="tx-table"></div>
+    </section>
+
+    <section>
+      <h2>Dare Replies</h2>
+      <div id="replies-list"></div>
+    </section>
+  </div>
+  <script src="js/profile.js"></script>
+</body>
+</html>
